@@ -6,10 +6,15 @@ def index(request):
     
     context = {
         'title': 'Home',
-        'content': 'Головна сторінка магазину - HOME'
+        'content': 'Магазин меблів - HOME'
     }
     return render(request, 'main/index.html', context)
 
 
 def about(request):
-    return HttpResponse("About Page")
+    context = {
+        'title': 'Про нас - HOME',
+        'content': 'Про нас - HOME',
+        'text_on_page': 'Якийсь текст, який хвалить нас, що ми найкращий у світі магазин меблів'
+    }
+    return render(request, 'main/about.html', context)
