@@ -2,36 +2,36 @@
   {
     "model": "goods.categories",
     "pk": 4,
-    "fields": { "name": "�� ������", "slug": "all" }
+    "fields": { "name": "Всі товари", "slug": "all" }
   },
   {
     "model": "goods.categories",
     "pk": 5,
-    "fields": { "name": "�����", "slug": "dekor" }
+    "fields": { "name": "Декор", "slug": "dekor" }
   },
   {
     "model": "goods.categories",
     "pk": 6,
-    "fields": { "name": "���������", "slug": "furnitura" }
+    "fields": { "name": "Фурнітура", "slug": "furnitura" }
   },
   {
     "model": "goods.categories",
     "pk": 7,
-    "fields": { "name": "����", "slug": "ofis" }
+    "fields": { "name": "Офіс", "slug": "ofis" }
   },
   {
     "model": "goods.categories",
     "pk": 8,
-    "fields": { "name": "³������", "slug": "vitalnya" }
+    "fields": { "name": "Вітальня", "slug": "vitalnya" }
   },
   {
     "model": "goods.categories",
     "pk": 9,
-    "fields": { "name": "�������", "slug": "spalnya" }
+    "fields": { "name": "Спальня", "slug": "spalnya" }
   },
   {
     "model": "goods.categories",
     "pk": 10,
-    "fields": { "name": "�����", "slug": "kuhnya" }
+    "fields": { "name": "Кухня", "slug": "kuhnya" }
   }
 ]
