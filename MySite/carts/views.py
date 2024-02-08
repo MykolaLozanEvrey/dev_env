@@ -36,8 +36,7 @@ def cart_add(request):
                 cart.save()
         else:
             Cart.objects.create(
-                session_key=request.session.session_key, product=product, quantity=1
-            )
+                session_key=request.session.session_key, product=product, quantity=1)
 
     user_cart = get_user_carts(request)
     cart_items_html = render_to_string(
