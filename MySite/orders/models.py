@@ -1,5 +1,5 @@
 from django.db import models
-from traitlets import default
+
 
 from goods.models import Products
 from users.models import User

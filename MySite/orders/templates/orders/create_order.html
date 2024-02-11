@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
 {% load carts_tags %}
-{% block content %}
 
+{% block content %}
 <div class=" bg-white p-4 mb-4 mx-2 rounded custom-shadow">
     <div class="container">
         <h3 class="text-center mb-4">Обрані товари</h3>
@@ -92,6 +92,9 @@
                                 id="id_payment_on_get" value="1">
                                 <label class="form-check-label" for="id_payment_on_get">
                                     Готівкою/картою при отриманні</label>
+                                {% if form.last_name.errors %}
+                                <div class="alert alert-danger alert-dismissible fade show">{{form.last_name.errors}}</div>
+                                {% endif %}
                             </div>
                         </div>
                     </div>
