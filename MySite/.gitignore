@@ -1,9 +1,11 @@
 venv/
+venv
 .pylintrc
 __pycache__
-
+.vs
 .vscode
 .idea
-
+.env
 db.sqlite3
 media/
+media

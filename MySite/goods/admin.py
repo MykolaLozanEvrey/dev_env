@@ -19,7 +19,7 @@ class ProductsAdmin(admin.ModelAdmin):
     search_fields = ['name', 'description']
     list_filter = ['discount', 'category']
     fields = [
-        'name',
+        ('name', 'image'),
         'category',
         'slug',
         'description',

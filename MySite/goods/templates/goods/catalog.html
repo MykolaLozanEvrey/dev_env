@@ -13,7 +13,7 @@
         <div class="dropdown mb-2">
             <button class="btn btn-secondary dropdown-toggle btn-dark" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                Фильтры
+                Фільтри
             </button>
     
             <form action="{% if request.GET.q %}{% url "catalog:search" %}{% else %}{% url "catalog:index" slug_url %}{% endif %}" method="get" class="dropdown-menu bg-dark" data-bs-theme="dark">
@@ -45,7 +45,7 @@
                     <input class="form-check-input" type="radio" name="order_by" id="flexRadioDefault3" value="-price" 
                     {% if request.GET.order_by == '-price' %}checked{% endif %}>
                     <label class="form-check-label" for="flexRadioDefault3">
-                        От дорогих к дешевым
+                        Від дорогих до дешевих
                     </label>
                 </div>
                 <button type="submit" class="btn btn-primary mx-3 mt-3">Застосувати</button>
@@ -53,10 +53,10 @@
         </div>
 
         {% if request.GET.q %}
-        <h3 class="mt-4"> Результат пошуку за запитом --- {{ request.GET.q }}</h3>
+            <h1 class="mt-4"> Результат пошуку за запитом --- {{ request.GET.q }}</h1>
         {% if not goods %}
-        <link rel="stylesheet" href="{% static "deps/css/my_footer_css.css" %}">
-        <h2 class="mt-4"> За вашим запитом товарів не знайдено </h2>
+            <link rel="stylesheet" href="{% static "deps/css/my_footer_css.css" %}">
+            <h1 class="mt-4"> За вашим запитом товарів не знайдено </h1>
         {% endif %}
         {% endif %}
         <!-- Карта товара -->
@@ -112,11 +112,9 @@
                 </div>
             </div>
     {% endfor %}
-        
-
+</div>     
 
 <!-- Пагинация -->
-</div>
 {% if goods %}
     <nav aria-label="Page navigation example">
         <ul class="pagination justify-content-center my-4">
@@ -139,13 +137,12 @@
             </div>
         </ul>
     </nav>{% endif %}
-
 {% endblock %}
 
 {% block footer %}
 <footer class="py-4 bg-dark">
-    <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; MySite Home Mykola Lozan 2023</p>
-    </div>
+  <div class="container">
+    <p class="m-0 text-center text-white">Mykola Lozan &copy; Home Python Django MySite - "first project" 2024</p>
+  </div>
 </footer>
 {% endblock %}

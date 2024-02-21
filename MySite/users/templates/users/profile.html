@@ -88,12 +88,6 @@
                         <!-- Разметка корзины -->
                         {% include "carts/includes/included_cart.html" %}
                         </div>
-                        {% if carts and not orders%}
-                        <a class="btn btn-dark" href="{% url "orders:create_order" %}">
-                            Оформити замовлення
-                        </a>
-                        {% endif %}
-                        <!-- Закончилась разметка корзины -->
                     </div>
                     {% comment %} {% if carts %}
                         <a class="btn btn-dark" href="../orders/create_order.html">
