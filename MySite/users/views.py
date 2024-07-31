@@ -1,3 +1,4 @@
+from django.contrib.admin import ModelAdmin
 from django.contrib.auth.decorators import login_required
 from django.contrib import auth, messages
 from django.db.models import Prefetch
